@@ -21,7 +21,7 @@ As partes livres devem conter, conforme a escolha do grupo os seguintes itens:
 - Formulário para cadastro de informações sobre os  vídeos postado na comunidade de vídeos temáticos
 
 ### Divisão do wireframe do site por integrante
-![imagem da divisão do trabalho](./images/wireframe.jpeg "wireframe division")
+![imagem da divisão do trabalho](./assets/images/wireframe.jpeg "wireframe division")
 
 ### Organização do trabalho
 

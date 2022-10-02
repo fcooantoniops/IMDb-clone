@@ -51,20 +51,22 @@ footer{
     text-align: center;
     font-size: small;
     color: #808080;
-    position: fixed;
-    bottom: 0;
-    right: 0;
 }
 
-#entrevistas-making-of, #top10{
+section:last-child{
+    margin-bottom: 4%;
+}
+
+#entrevistas-making-of, #top10, #sugestoes{
     display: flex;
     flex-direction: column;
     padding: 1%;
 }
 
 .section-title{
-    font-size: 1.6rem;
+    font-size: 1.5em;
     font-weight: bolder;
+    color: #f5c518;
 }
 
 .making-of-videos{
@@ -148,6 +150,30 @@ footer{
     height: 220px;
     background-color: lightcyan;
     cursor: pointer;
+}
+
+.sugestoes-container{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    margin: 2% 0;
+}
+
+.sugest-videos{
+    width: 50%;
+}
+
+.sgst-video{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    background-color: #808080;
+    border-radius: 6px;
+}
+
+.sgst-video > iframe{
+    width: 40%;
+    height: 100%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 680px){
