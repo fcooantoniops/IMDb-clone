@@ -57,7 +57,7 @@ section:last-child{
     margin-bottom: 4%;
 }
 
-#entrevistas-making-of, #top10, #sugestoes{
+#entrevistas-making-of, #top10, #sugestoes, #comunidade{
     display: flex;
     flex-direction: column;
     padding: 1%;
@@ -161,19 +161,92 @@ section:last-child{
 
 .sugest-videos{
     width: 50%;
+    margin: 1%;
 }
 
 .sgst-video{
     width: 100%;
     height: 20vh;
     display: flex;
-    background-color: #808080;
+    background-color: #121212;
     border-radius: 6px;
+    margin: 1% 0;
 }
 
 .sgst-video > iframe{
     width: 40%;
     height: 100%;
+}
+
+.sgst-video:last-child{
+    margin-bottom: 2%;
+}
+
+.sgst-video-description{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.sgst-title{
+    margin-bottom: 6%;
+}
+
+.sgst-name{
+    color: #808080;
+}
+
+.comunidade-container{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin: 2% 0;
+}
+
+.comentarios{
+    width: 70%;
+    height: 100%;
+    padding: 1%;
+}
+
+.comentarios-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    border-radius: 5px;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comentario > p{
+    margin-right: 1%;
+}
+
+.comentario-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 1%;
+}
+
+.comentario-icon:nth-child(1){
+    background-color: lightcoral;
+}
+
+
+.sobre-editorial{
+    width: 30%;
+    height: 100%;
+    background-color: darkgray;
 }
 
 @media screen and (min-width: 320px) and (max-width: 680px){
