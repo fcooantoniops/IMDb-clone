@@ -10,11 +10,221 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            IMDbb
+        <button class="botao-navegar-all">
+            <img class="icon-menu" src="img/menu.png"></img>
+        </button>
+        
+        <div class="campo-entrar">
+            <a href="#">
+                <button class="botao-entrar">
+                    <h4>Fazer Login</h4>
+                </button>
+            </a>
         </div>
+
+        <div class="campo-lancamentos">
+            <a href="#lancamentos">
+                <button class="botao-navegar">
+                    <h4>Lançamentos</h4>
+                </button>
+            </a>    
+        </div>
+
+        <div class="campo-destaque">
+            <a href="#destaque">
+                <button class="botao-navegar">
+                    <h4>Destaque</h4>
+                </button>
+            </a>
+        </div>
+
+        <div class="campo-avaliacao">
+            <a href="#avaliacoes">
+                <button class="botao-navegar">
+                    <h4>Avaliações</h4>
+                </button>
+            </a>    
+        </div>
+
+        <form class="barra-pesquisa">
+            <div>
+                <input type="text" class="campo-pesquisa" placeholder="Pesquise na IMBB" ><br>
+            </div>
+        </form>
     </header>
+    
     <main>
+         <section id="lancamentos">
+            <div class="titulo-lancamentos" id="titulo-lancamentos">
+                <h3>Lançamentos<h3>
+            </div>
+
+            <div class="conteudo-lancamentos">
+                <iframe src="https://www.youtube.com/embed/ciinJ7ly-Jw" class="trailer"></iframe>
+
+                <div class="sobre">
+                    <div>
+                        <h2>House of the Dragon</h2>
+                        <h3>S1E7 - Driftmark</h3>
+                    </div>
+                    <div>
+                        <p>Uma guerra interna de sucessão dentro da Casa Targaryen no auge de seu poder, 172 anos antes do nascimento de Daenerys Targaryen.</p>
+                    </div>
+                    <div>
+                        <h4>Direção</h4>
+                        <a class="sobre-link" href="#">Miguel Sapochnik</a>
+                    </div>
+                    <div>
+                        <h4>Roteirista</h4>
+                        <a class="sobre-link" href="#">Kevin Lau</a> . <a class="sobre-link" href="#">George R.R. Martin</a> . <a class="sobre-link" href="#">Ryan J. Condal</a>    
+                    </div>
+                    <div>
+                        <h4>Artistas</h4>
+                        <a class="sobre-link" href="#">Paddy Considine</a> . <a class="sobre-link" href="#">Matt Smith</a> . <a class="sobre-link" href="#">Olivia Cooke</a>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destaque">
+            <div class="barra-destaque">
+                <div class="titulo-destaque">
+                    <h3>Em Destaque<h3>
+                </div>
+
+                <div class="seleciona-destaque">
+                    <select id="seleciona-destaque-id">
+                        <option value="0">Séries</option>
+                        <option value="1">Filmes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="conteudo-destaque">
+                <div class="box-destaque">
+                    <img class="box-destaque-imagem" src="img/breaking-bad-poster-show.jpg"></img>
+                    <div class="box-destaque-info">
+                        <div class="box-destaque-info-avaliacao"> 9.5 / 10</div>
+                        <div class="box-destaque-info-nome">Breaking Bad</div>
+                    </div>
+                </div>
+                <div class="box-destaque">
+                    <img class="box-destaque-imagem" src="img/got-poster-show.jpg"></img>
+                    <div class="box-destaque-info">
+                        <div class="box-destaque-info-avaliacao"> 9.2 / 10</div>
+                        <div class="box-destaque-info-nome">Game of Thrones</div>
+                    </div>
+                </div>
+                <div class="box-destaque">
+                    <img class="box-destaque-imagem" src="img/rick-and-morty-poster-show.jpg"></img>
+                    <div class="box-destaque-info">
+                        <div class="box-destaque-info-avaliacao"> 9.2 / 10</div>
+                        <div class="box-destaque-info-nome">Rick and Morty</div>
+                    </div>
+                </div>
+                <div class="box-destaque">
+                    <img class="box-destaque-imagem" src="img/one-piece-poster-show.jpg"></img>
+                    <div class="box-destaque-info">
+                        <div class="box-destaque-info-avaliacao"> 8.9 / 10</div>
+                        <div class="box-destaque-info-nome">One Piece</div>
+                    </div>
+                </div>
+                <div class="box-destaque">
+                    <img class="box-destaque-imagem" src="img/the-boys-poster-show.jpg"></img>
+                    <div class="box-destaque-info">
+                        <div class="box-destaque-info-avaliacao"> 8.7 / 10</div>
+                        <div class="box-destaque-info-nome">The Boys</div>
+                    </div>
+                </div>
+                <div class="box-destaque">
+                    <img class="box-destaque-imagem" src="img/sandman-poster-show.jpg"></img>
+                    <div class="box-destaque-info">
+                        <div class="box-destaque-info-avaliacao"> 7.7 / 10</div>
+                        <div class="box-destaque-info-nome">Sandman</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mais">
+                <button>Mais Destaques</button>    
+            </div>
+        </section>
+
+        <section id="avaliacoes">
+            <div class="titulo-avaliacao">
+                <h3>Ultimas Avaliações<h3>
+            </div>
+
+            <div class="conteudo-avaliacao">
+                <div class="box-avaliacao">
+                    <img class="icone" src="img/icon-1.png"></img>
+                    <div class="conteudo-box-avaliacao">
+                        <div class="usuario">
+                            <h4>Heisenberg</h4>
+                        </div>
+                        <div class="comentario">
+                            <p>Realmente Breaking Bad merece o sucesso que tem. Acabei de ver as 5 temporadas em poucos dias e fiquei muito entusiasmado com o que vi. Acredito que ela mudou a maneira de fazer seriados porque você assiste as 5 temporadas num folego só!<p>
+                        </div>
+                        <div class="avaliacao"> &#9733 &#9733 &#9733 &#9733 &#9733</div>
+                    </div>
+                </div>
+
+                <div class="box-avaliacao">
+                    <img class="icone" src="img/icon-2.png"></img>
+                    <div class="conteudo-box-avaliacao">
+                        <div class="usuario">
+                            <h4>Daenerys Targaryen</h4>
+                        </div>
+                        <div class="comentario">
+                            <p>Game of Thrones tem personagens marcantes, ótimas cenas de ação e uma trama bem escrita. Mas nas últimas duas temporadas parece que a Série foi perdendo seu ritmo e acabou se tornando nada mais do que um RPG muito bem contado.<p>
+                        </div>
+                        <div class="avaliacao"> &#9733 &#9733 &#9733</div>
+                    </div>
+                </div>
+
+                <div class="box-avaliacao">
+                    <img class="icone" src="img/icon-3.png"></img>
+                    <div class="conteudo-box-avaliacao">
+                        <div class="usuario">
+                            <h4>Rick Sanchez</h4>
+                        </div>
+                        <div class="comentario">
+                            <p>Rick and Morty aplica ciências e suas teorias a personagens geniais, a animação mostra a ciencia com pitadas de ironia e humor, sendo esse tipo de abordagem uma das peças de essência do conteúdo. Bom demais!<p>
+                        </div>
+                        <div class="avaliacao"> &#9733 &#9733 &#9733 &#9733 &#9733</div>
+                    </div>        
+                </div>
+
+                <div class="box-avaliacao">
+                    <img class="icone" src="img/icon-4.png"></img>
+                    <div class="conteudo-box-avaliacao">
+                        <div class="usuario">
+                            <h4>The Frenchman</h4>
+                        </div>
+                        <div class="comentario">
+                            <p>The Boys é uma das melhores séries da atualidade. Uma das poucas que dá vontade de acompanhar e lamentar os poucos episódios e o grande hiato de tempo até a estreia da próxima temporada. É o melhor produto sobre "super-heróis".<p>
+                        </div>
+                        <div class="avaliacao"> &#9733 &#9733 &#9733 &#9733</div>
+                    </div>
+                </div>
+
+                <div class="box-avaliacao">
+                    <img class="icone" src="img/icon-5.png"></img>
+                        <div class="conteudo-box-avaliacao">
+                            <div class="usuario">
+                                <h4>The Oneiromancer</h4>
+                            </div>
+                            <div class="comentario">
+                                <p>Não estavam brincando quando disseram que Sandman está MELHOR que as HQs originais. Eu ainda gostaria que Morpheus usasse um manto preto estilo grego, seu cabelo fosse maior e seus olhos fossem pretos, mas o ator honrou o papel.<p>
+                            </div>
+                            <div class="avaliacao"> &#9733 &#9733 &#9733  &#9733 &#9733</div>    
+                        </div>      
+                    </div>              
+                </div>
+            </div>
+            <div class="mais">
+                <button>Mais Avaliações</button>    
+            </div>
+        </section>
+
         <section id="entrevistas-making-of">
             <h2 class="section-title">Entrevistas & Making of</h2>
             <div class="making-of-videos">
