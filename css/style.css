@@ -11,16 +11,6 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/*header{
-    width: 100%;
-    height: 8%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #121212;
-}*/
-
 header{
     width: auto;
     height: 8vh;
@@ -41,268 +31,7 @@ main{
 iframe{
     border:none;
 }
-
-/*Desktop & Tv*/
-@media only screen and (min-width: 1279px){
-    /*Cabeçalho*/
-    .botao-navegar-all{
-        display: none;
-    }
-
-    .campo-entrar{
-        grid-row: 2;
-        grid-column: 1;
-        margin-left: 1em;
-    }
-
-    .campo-lancamentos{
-        grid-row: 2;
-        grid-column: 3;
-    }
-
-    .campo-destaque{
-        grid-row: 2;
-        grid-column: 4;
-        margin-left: 0.5em;
-    }
-
-    .campo-avaliacao{
-        grid-row: 2;
-        grid-column: 5;
-        margin-left: 0.5em;
-    }
-
-    .botao-navegar, .botao-entrar{
-        width: 104px;
-        height: 40px;
-        border-radius: 5px;
-        border: none;
-        font-size: 1em;
-        background-color: #121212;
-        color: #ffffff;
-    }
-
-    .botao-navegar:hover, .botao-entrar:hover{
-        background-color: #1f1f1f;
-    }
-
-    .barra-pesquisa{
-        width: 404px;
-        height: 36px;
-        grid-row: 2;
-        grid-column: 20;
-        background-color: #1f1f1f;;
-        display: flex;
-        border-radius: 5px;
-        margin-right: 1em;
-    }
-
-    .campo-pesquisa{
-        width: 364px;
-        height: 36px;
-        opacity: 87%;
-        padding: 1em;
-        border-radius: 5px 0 0 5px;
-        border: none;
-    }
-
-    /*Seção: Lançamentos*/
-    .titulo-lancamentos{
-        font-size: 1.5em;
-        color: #f5c518;
-        width: auto;
-        height: 5vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1em 0 1em 0;
-    }
-    
-    .conteudo-lancamentos{
-        width: auto;
-        height: 55vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .trailer{
-        width: 43vw;
-        height: 50vh;
-        margin-right: 1vw;
-    }
-    
-    .sobre{
-        width: 43vw;
-        height: 50vh;
-        color: #ffffff;
-    }
-    
-    .sobre > div{
-        margin: 1vw;
-    }
-
-    .sobre-link{
-        color: #5799ef;
-    }
-
-    /*Seção: Destaque*/
-    .barra-destaque{
-        width: auto;
-        height: 5vh;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-    }
-
-    .titulo-destaque{
-        width: 20vw;
-        height: 100%;
-        color: #f5c518;
-        font-size: 1.5em;
-        padding-left: 1em;
-        grid-row: 3;
-        grid-column: 1;
-    }
-    
-    .seleciona-destaque{
-        grid-row: 3;
-        grid-column: 10;
-        margin-right: 1em;
-    }
-    
-    #seleciona-destaque-id{
-        width: 7vw;
-        height: 100%;
-        color: #ffffff;
-        background-color: #1f1f1f;
-        border: none;
-        border-radius: 4px;
-    }
-
-    .conteudo-destaque{
-        width: auto;
-        height: 55vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .box-destaque{
-        width: 14vw;
-        height: 50vh;
-        margin: 1vw;    
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box-destaque-imagem{
-        width: 100%;
-        height: 85%;
-    }
-
-    .box-destaque-info{
-        height: 15%;
-        background-color: #1f1f1f;
-        color: #ffffff;
-        padding: 0.5vw;
-    }
-
-    .box-destaque-info-avaliacao{
-        padding: 0vw 0.2vw;
-        grid-row: 1;
-    }
-
-    .box-destaque-info-avaliacao::before{
-        content: "\2605";
-    }
-
-    .box-destaque-info-nome{
-        padding: 0.2vw;
-        grid-row: 2;
-    }
-    
-    /*Seção: Avaliacao*/
-    .titulo-avaliacao{
-        font-size: 1.5em;
-        color: #f5c518;
-        width: auto;
-        height: 5vh;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding-left: 1em;
-    }
-
-    .conteudo-avaliacao{
-        width: auto;
-        height: 35vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .box-avaliacao{
-        width: 25vw;
-        height: 25vh;
-        margin: 1em;
-        display: flex;
-        flex-direction: row;
-        color: #ffffff;
-        vertical-align: baseline;
-    }
-    
-    .icone{
-        width: 20%;
-        height: 20%;
-    }
-
-    .conteudo-box-avaliacao{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .usuario{
-        height: 10%;
-        display: flex;
-        align-items: center;
-        padding: 1em;
-    }
-
-    .comentario{
-        height: 80%;
-        text-align: justify;
-        font-size: 0.9em;
-        padding-left: 1em;
-        overflow-y: auto;
-    }
-
-    .avaliacao{
-        height: 10%;
-        padding-left: 1em;
-    }
-
-    .mais{
-        width: auto;
-        height: 5vh;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .mais >button{
-        height: 5vh;
-        margin: 1vw;
-        padding: 0.5em;
-        background-color: #1f1f1f;
-        color: #ffffff;
-        border-radius: 4px;
-        border: none;
-    }
-
-    .logo{
+ .logo{
         width: 80px;
         height: 60%;
         display: flex;
@@ -589,6 +318,266 @@ iframe{
         min-width: 30px;
         height: 30px;
         border-radius: 50%;
+    }
+
+/*Desktop & Tv*/
+@media only screen and (min-width: 1279px){
+    /*Cabeçalho*/
+    .botao-navegar-all{
+        display: none;
+    }
+
+    .campo-entrar{
+        grid-row: 2;
+        grid-column: 1;
+        margin-left: 1em;
+    }
+
+    .campo-lancamentos{
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    .campo-destaque{
+        grid-row: 2;
+        grid-column: 4;
+        margin-left: 0.5em;
+    }
+
+    .campo-avaliacao{
+        grid-row: 2;
+        grid-column: 5;
+        margin-left: 0.5em;
+    }
+
+    .botao-navegar, .botao-entrar{
+        width: 104px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1em;
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .botao-navegar:hover, .botao-entrar:hover{
+        background-color: #1f1f1f;
+    }
+
+    .barra-pesquisa{
+        width: 404px;
+        height: 36px;
+        grid-row: 2;
+        grid-column: 20;
+        background-color: #1f1f1f;;
+        display: flex;
+        border-radius: 5px;
+        margin-right: 1em;
+    }
+
+    .campo-pesquisa{
+        width: 364px;
+        height: 36px;
+        opacity: 87%;
+        padding: 1em;
+        border-radius: 5px 0 0 5px;
+        border: none;
+    }
+
+    /*Seção: Lançamentos*/
+    .titulo-lancamentos{
+        font-size: 1.5em;
+        color: #f5c518;
+        width: auto;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 0 1em 0;
+    }
+    
+    .conteudo-lancamentos{
+        width: auto;
+        height: 55vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .trailer{
+        width: 43vw;
+        height: 50vh;
+        margin-right: 1vw;
+    }
+    
+    .sobre{
+        width: 43vw;
+        height: 50vh;
+        color: #ffffff;
+    }
+    
+    .sobre > div{
+        margin: 1vw;
+    }
+
+    .sobre-link{
+        color: #5799ef;
+    }
+
+    /*Seção: Destaque*/
+    .barra-destaque{
+        width: auto;
+        height: 5vh;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .titulo-destaque{
+        width: 20vw;
+        height: 100%;
+        color: #f5c518;
+        font-size: 1.5em;
+        padding-left: 1em;
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    .seleciona-destaque{
+        grid-row: 3;
+        grid-column: 10;
+        margin-right: 1em;
+    }
+    
+    #seleciona-destaque-id{
+        width: 7vw;
+        height: 100%;
+        color: #ffffff;
+        background-color: #1f1f1f;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .conteudo-destaque{
+        width: auto;
+        height: 55vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-destaque{
+        width: 14vw;
+        height: 50vh;
+        margin: 1vw;    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-destaque-imagem{
+        width: 100%;
+        height: 85%;
+    }
+
+    .box-destaque-info{
+        height: 15%;
+        background-color: #1f1f1f;
+        color: #ffffff;
+        padding: 0.5vw;
+    }
+
+    .box-destaque-info-avaliacao{
+        padding: 0vw 0.2vw;
+        grid-row: 1;
+    }
+
+    .box-destaque-info-avaliacao::before{
+        content: "\2605";
+    }
+
+    .box-destaque-info-nome{
+        padding: 0.2vw;
+        grid-row: 2;
+    }
+    
+    /*Seção: Avaliacao*/
+    .titulo-avaliacao{
+        font-size: 1.5em;
+        color: #f5c518;
+        width: auto;
+        height: 5vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1em;
+    }
+
+    .conteudo-avaliacao{
+        width: auto;
+        height: 35vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .box-avaliacao{
+        width: 25vw;
+        height: 25vh;
+        margin: 1em;
+        display: flex;
+        flex-direction: row;
+        color: #ffffff;
+        vertical-align: baseline;
+    }
+    
+    .icone{
+        width: 20%;
+        height: 20%;
+    }
+
+    .conteudo-box-avaliacao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .usuario{
+        height: 10%;
+        display: flex;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .comentario{
+        height: 80%;
+        text-align: justify;
+        font-size: 0.9em;
+        padding-left: 1em;
+        overflow-y: auto;
+    }
+
+    .avaliacao{
+        height: 10%;
+        padding-left: 1em;
+    }
+
+    .mais{
+        width: auto;
+        height: 5vh;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .mais >button{
+        height: 5vh;
+        margin: 1vw;
+        padding: 0.5em;
+        background-color: #1f1f1f;
+        color: #ffffff;
+        border-radius: 4px;
+        border: none;
     }
 }
 
