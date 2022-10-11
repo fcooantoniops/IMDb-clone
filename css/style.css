@@ -270,6 +270,8 @@ iframe{
         height: 40px;
         border-radius: 50%;
         margin-left: 1%;
+        font-size: medium;
+        font-weight: 600;
     }
 
     .sobre-editorial{
