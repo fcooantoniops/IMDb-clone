@@ -320,6 +320,167 @@ iframe{
         border-radius: 50%;
     }
 
+    /*Novidades e formulario*/
+.geralnova{
+    height: 40%;
+    width: 60%;
+    margin-right: 2%;
+}
+
+#nov-form{
+    display: flex;
+    flex-direction: row;
+}
+
+.novidadegeral{
+    display: flex;
+    flex-direction: column;
+}
+
+.novidade-bloco{
+    display: inline-block;
+    
+}
+
+.novatributos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.novidade-imagem{
+    height: 70%;
+    width: 40%;
+    float: left;
+
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.nov-form{
+    display: flex;
+    flex-direction: row;
+}
+
+.label-form{
+    margin-right: 2%;
+    border-radius: 5px;
+}
+
+.input-label{
+    width: 90%;
+    
+}
+
+
+/*Favoritos*/
+
+.letrafav{ /*Edita o Estilo da fonte*/
+    display: flex; 
+    text-decoration: underline;
+    font-size: 25px;
+    line-height: 1.6em;
+    margin-left: 7px;
+}
+
+.favoritos-div{
+    border-width: 3px;
+    border-style: outset;
+    border-color: #363636;
+    border-radius: 75px 0px 108px 0px ;
+    -moz-border-radius: 75px 0px 108px 0px ;
+    -webkit-border-radius: 75px 0px 108px 0px ;
+
+    margin-top: 1%;
+}
+
+#favoritos{
+    margin-bottom: 7%;
+}
+
+/*Propagandas*/
+
+
+.prop-maior{
+    display: flex;
+    
+}
+
+.prop-menor{
+    display: flex;
+   
+}
+
+#prop-central{
+    display: flex;
+    flex-direction: column;
+}
+
+.prop-geral{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgprop-maior{
+    width: 300px;
+    height: 500px;
+}
+
+.imgprop-menor{
+    width: 80%;
+    height: 90%;
+    margin: 0 25%;
+}
+
+/*Forum*/
+.forum-geral{
+    display: flex;
+    flex-direction: row;
+}
+
+.autor-geral{
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagem-geral{
+    display: flex;
+    flex-direction: column;
+}
+
+.data-geral{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hautor{
+    margin-top: 10px;
+}
+
+.fautor{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #363636;
+}
+
+.fmensagem{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #363636;
+}
+
+.fdata{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #363636;
+}
+
+
+.autor{
+    font-size: 1em;
+    font-weight: bolder;
+    color: #f5c518;
+}
 /*Desktop & Tv*/
 @media only screen and (min-width: 1279px){
     /*Cabeçalho*/
